@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Messages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe4e1; /* Light Pink */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .message {
+            .message {
+    font-size: 24px;
+    max-width: 90%;
+    word-wrap: break-word; /* Break long words */
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+/* Make text smaller on mobile */
+@media (max-width: 600px) {
+    .message {
+        font-size: 18px; /* Adjust size for small screens */
+        padding: 15px;
+    }
+}
+
+        }
+        .switch-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #ff69b4; /* Hot Pink */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .switch-btn:hover {
+            background-color: #ff1493; /* Darker Pink */
+        }
+        .hidden {
+            display: none;
+        }
+        .gift-container {
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .gift-container img {
+            width: 150px;
+            transition: transform 0.3s;
+        }
+        .gift-container img:hover {
+            transform: scale(1.1);
+        }
+        .download-container {
+            margin-top: 20px;
+        }
+        .download-container img {
+            width: 250px;
+            border-radius: 10px;
+        }
+        .download-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #ff4500; /* Orange-Red */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .download-btn:hover {
+            background-color: #ff6347; /* Tomato */
+        }
+        .hearts {
+            position: absolute;
+            top: 10px;
+            font-size: 30px;
+            color: #ff69b4;
+            animation: float 1.5s infinite alternate;
+        }
+        @keyframes float {
+            from { transform: translateY(0px); }
+            to { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="page1">
+        <div class="hearts">❤️💕</div>
+        <div class="message"> 
+            <h2>Happy 1 year of togetherness to both of us wohooooooooooo 🥳🥳🥳</h2><p>
+            Having someone like you is the biggest flex 🫠 you made me better with your love and care .... Living with you is so beautiful that I don't want to loose you ever 🙃 I'm glad ki tum mere sath ho or mera pyar sahi insan ke pas hai 🐣 I hope me bhi tumhe thoda khush rakh pa rha hai na 🐒 kyuki hum sabko hi kisi ek insan ki jarurat hoti hai who is having our back tum mere liye to ho hi 🐣 per me tumhare liye bhi wo Banna chahta hu 🐣 kya me kar pa rha hu baby ? 🐣 Me hamesha try karta rahunga tumhare liye apna best dene ki kyuki tum deserve karti ho sari khushiyan sari achi chije</p> <br>
+           <p>Yad hai shuru me hum thoda sath the per bahot strong sa ni tha or socha ni tha 1 year hoga hai na 🐣 fir dheere dheere chije hui or mere Karan gadbad hui usse thode issues aaye 🐣 fir wo resolve kiye or ab kinda strong hai hum or dur ni Jane denge 🫂 jab itna jhela hai to ab to kuch ni aane wala apne bich 🙃 me bas ab chahta hu ki tum sath raho or me tumhara dhyan rakhu ache se you made me better and better or me bhi tumhare liye wo insan banunga ki tum pura trust kar pao or tumhe koi issue na aye kabhi 🫂</p></div>
+            <button class="switch-btn" onclick="nextPage()">padho aage padho</button>
+    </div>
+
+    <div class="container hidden" id="page2">
+        <div class="hearts">💖💞</div>
+        <div class="message">I really love you sooooooooooo much baby or me kabhi ni imagine kar sakta khud ko tumse dur yar 🤧 tum bas mere sath rehna or meri rehna me bahoooooooooot jyada pyar karta hu tumse sachhi me 🐣 mere uthte hi aane wala thought ho tum or kuch hone se ye rehta hai ki I have a loving wifeyyyy wohoooo 🥳 to you are sooooooooooo much important to me re 🫂 and you've become a part of me 🐣 hum hamesha sath rahenge 🫂 kuch log kehte hai ki pyar ye wo bad me ni chalta thode time  ka hai ye wo ....unki bat kahi na kahi sahi hai .... Kyuki sab efforts nahi karte hamesha....but hum karenge ok 🫂 sath rahenge ladenge khush rahenge pyar karenge muje to sachhi koi or ni chahiye 🐣 tum hi ho ab tum hi ho meri jindagi ab tum hi ho 😛🤣🤣</div>
+        <button class="switch-btn" onclick="nextPage()">Surprise Alert</button>
+    </div>
+
+    <div class="container hidden" id="page3">
+        <div class="hearts">💓💗</div>
+        <div class="message">Dekho tumhare liye kuch banaya hai mene tum hasna ni per 🐒 mene first time hi try Kiya hai so please gussa ni karna 🐣 promise karo ni gussa karogi  🐣</div>
+        <button class="switch-btn" onclick="nextPage()">I promise my babbyyyy</button>
+    </div>
+
+    <div class="container hidden" id="page4">
+        <div class="hearts">💘💝</div>
+        <div class="message">I hope tumne kar liya hai promise hai na 🐣 ni kiya to kar lo and gussa ni hona kyuki thoda utpatang lag sakta hai bwahaha 🤣 per mene sachhi bada mehnat se banaya hai idk 🐒  usse pehle HAPPY ANNIVERSARY ONCE AGAIN TO THE LOVE OF MY LIFE WOHOOOOOOOOOOO 🥳🥳🥳🫠🫠🫠🫠
+            Jao dekho ab 🐒</div>
+        <div class="gift-container" onclick="showGift()">
+            <img src="heart.jpg" alt="Gift">
+        </div>
+    </div>
+
+    <div class="container hidden" id="giftPage">
+        <div class="message">Lol please hasna ni mene Kiya hai try for the  first time 🐒 ye wo pic hai jo starting me di thi tumne yad hai 🐒 hehehe 🐣 I love you sooooooooooo much 🐒 ab wp bhagke  aao or batao kaisa hai or pitai kar lo kharab bana hai to 🥲🥹</div>
+        <div class="download-container">
+            <img src="US.jpg" alt="Gift Reveal" id="downloadImage">
+        </div>
+        <a id="downloadLink" href="#" download="special-gift.jpg">
+            <button class="download-btn">Download</button>
+        </a>
+    </div>
+
+    <script>
+        let currentPage = 1;
+
+        function nextPage() {
+            document.getElementById(`page${currentPage}`).classList.add('hidden');
+            currentPage++;
+            if (currentPage > 4) currentPage = 1;
+            document.getElementById(`page${currentPage}`).classList.remove('hidden');
+        }
+
+        function showGift() {
+            document.getElementById("page4").classList.add("hidden");
+            document.getElementById("giftPage").classList.remove("hidden");
+
+            // Set the correct image for download
+            let imageUrl = document.getElementById("downloadImage").src;
+            document.getElementById("downloadLink").href = imageUrl;
+        }
+    </script>
+
+</body>
+</html>
